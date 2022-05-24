@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section class="gallery">
+        <h2 class="title">Gallery</h2>
+        <audio controls autoplay>
+            <source src="./audio/music.ogg" type='/audio/music.ogg; codecs=vorbis'>
+            <source src="./audio/music.mp3" type="audio/mpeg">
+            <a href="./audio/music.mp3">Скачайте музыку</a>.
+           </audio>
+           <div class="text" >Бывают интересные встречи, но встреча с тобой была особенной! <br>
+             Попадаются хорошие люди, но ты лучше всех! <br>
+              С иными приятно провести время, но с тобой можно говорить бесконечно! <br>
+            Только увидев тебя, я узнал,<br>
+            Что в мире есть красоты идеал. <br>
+            Я и не думал, что может так быть: <br>
+            Глаз твоих мне невозможно забыть. <br>
+       </div>
+        <div class="gallery-list">
+            <a href="./image/sara.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3>Мудрость</h3> </div>
+                <img src="./image/sara.jpg" alt="alt">
+            </a>
+            <a href="./image/romashki.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3></h3> </div>
+                <img src="./image/romashki.jpg" alt="alt">
+            </a>
+            <a href="./image/sara10.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3>Красота</h3> </div>
+                <img src="./image/sara10.jpg" alt="alt">
+            </a>
+            <a href="./image/Klever-1.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3></h3> </div>
+                <img src=".//image/Klever-1.jpg" alt="alt">
+            </a>
+            <a href="./image/sara11.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3>Доброта</h3> </div>
+                <img src="./image/sara11.jpg" alt="alt">
+            </a>
+            
+            <a href="./image/sara2.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3> Интеллигентность</h3></div>
+                <img src="./image/sara2.jpg" alt="alt">
+            </a>
+            <a href="./image/btsjpg.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3></h3> </div>
+                <img src="/image/btsjpg.jpg" alt="alt">
+            </a>
+            <a href="./image/sara3.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3>Верность</h3> </div>
+                <img src="./image/sara3.jpg" alt="alt">
+            </a>
+            <a href="./image/sara6.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3>Чувство Юмора</h3> </div>
+                <img src=".//image/sara6.jpg" alt="alt">
+            </a>
+            <a href="./image/Liven-Dozhd-Livni-Dozhdi.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3></h3> </div>
+                <img src=".//image/Liven-Dozhd-Livni-Dozhdi.jpg" alt="alt">
+            </a>
+            <a href="./image/sara7.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3>Открытость</h3> </div>
+                <img src=".//image/sara7.jpg" alt="alt">
+            </a>
+            <a href="./image/Park-Hyung-Sik.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3></h3> </div>
+                <img src="./image/Park-Hyung-Sik.jpg" alt="alt">
+            </a>
+            <a href="./image/sara8.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3>Умение прощать</h3> </div>
+                <img src="./image/sara8.jpg" alt="alt">
+            </a>
+            <a href="./image/cow.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3></h3> </div>
+                <img src="./image/cow.jpg" alt="alt">
+            </a>
+            <a href="./image/sara9.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3>Уверенность</h3> </div>
+                <img src="./image/sara9.jpg" alt="alt">
+            </a>
+            <a href="./image/sara9.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3> Честность</h3></div>
+                <img src="./image/sara9.jpg" alt="alt">
+            </a>
+            <a href="./image/sara9.jpg" class="gallery-item">
+                <div class="gallery-item-hover"><h3> Способность Любить</h3></div>
+                <img src=".//image/sara9.jpg" alt="alt">
+            </a>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<script>
+$(".gallery-list").magnificPopup({
+delegate:"a",
+type:"image",
+gallery: {
+    enabled:true
+}
+});
+    </script>
+</body>
+
+</html>
